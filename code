@@ -1,0 +1,12 @@
+// Please don't break our website
+<?php
+function custom_admin_notice_with_logo() {
+    ?>
+    <div class="notice notice-warning is-dismissible" style="padding-top: 20px;">
+        <img src="YOUR-LOGO-URL" alt="Logo" style="width: 120px; display: block; margin-bottom: 10px;">
+        <p><strong>Disclaimer:</strong> Please keep in mind that any unintended changes you make to the website (breakage, errors, etc.) that will need to be fixed by us are considered billable. For more questions, please contact us at <a href="mailto:support@example.com">support@example.com</a></p>
+    </div>
+    <?php
+}
+add_action( 'admin_notices', 'custom_admin_notice_with_logo' );
+?>
